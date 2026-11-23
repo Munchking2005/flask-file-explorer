@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8"
+	<title>Directory Explorer</title>
+</head>
+<body>
+	<h1>Directory Explorer</h1>
+	<h2>{{project_directory}} :  Folder Structure</h2>
+	{% for folder in folders%}
+		<p> {{folder}} </p>
+	{% endfor %}
+	<h2></h2>
+	{% for file in files %}
+		<p> {{file}} </p>
+	{% endfor %}
+	
+</body>
+</html>
